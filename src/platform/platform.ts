@@ -17,7 +17,7 @@ import { removeArrayItem } from '../util/util';
  * customize your app to fit any device.
  *
  * @usage
- * ```ts
+ * ```typescript
  * import { Platform } from 'ionic-angular';
  *
  * @Component({...})
@@ -33,7 +33,7 @@ export class Platform {
 
   private _win: Window;
   private _doc: HTMLDocument;
-  private _versions: {[name: string]: PlatformVersion} = {};
+  private _versions: { [name: string]: PlatformVersion } = {};
   private _dir: string;
   private _lang: string;
   private _ua: string;
@@ -42,7 +42,7 @@ export class Platform {
   private _readyPromise: Promise<any>;
   private _readyResolve: any;
   private _bbActions: BackButtonAction[] = [];
-  private _registry: {[name: string]: PlatformConfig};
+  private _registry: { [name: string]: PlatformConfig };
   private _default: string;
   private _pW = 0;
   private _pH = 0;
@@ -71,7 +71,7 @@ export class Platform {
   _platforms: string[] = [];
 
   constructor() {
-    this._readyPromise = new Promise(res => { this._readyResolve = res; } );
+    this._readyPromise = new Promise(res => { this._readyResolve = res; });
 
     this.backButton.subscribe(() => {
       // the hardware back button event has been fired
@@ -217,7 +217,7 @@ export class Platform {
    *
    * @returns {object} An object containing all of the platforms and their versions.
    */
-  versions(): {[name: string]: PlatformVersion} {
+  versions(): { [name: string]: PlatformVersion } {
     // get all the platforms that have a valid parsed version
     return this._versions;
   }
@@ -381,7 +381,7 @@ export class Platform {
   /**
    * @hidden
    */
-  exitApp() {}
+  exitApp() { }
 
   // Events meant to be triggered by the engine
   // **********************************************
@@ -433,7 +433,7 @@ export class Platform {
    * the back button action.
    */
   registerBackButtonAction(fn: Function, priority: number = 0): Function {
-    const action: BackButtonAction = {fn, priority};
+    const action: BackButtonAction = { fn, priority };
 
     this._bbActions.push(action);
 
@@ -631,7 +631,7 @@ export class Platform {
    * @hidden
    * This requestAnimationFrame will NOT be wrapped by zone.
    */
-  raf(callback: {(timeStamp?: number): void}|Function): number {
+  raf(callback: { (timeStamp?: number): void } | Function): number {
     const win: any = this._win;
     return win['__zone_symbol__requestAnimationFrame'](callback);
   }
@@ -668,13 +668,13 @@ export class Platform {
    * If options are not supported, then just return a boolean which
    * represents "capture". Returns a method to remove the listener.
    */
-  registerListener(ele: any, eventName: string, callback: {(ev?: UIEvent): void}, opts: EventListenerOptions, unregisterListenersCollection?: Function[]): Function {
+  registerListener(ele: any, eventName: string, callback: { (ev?: UIEvent): void }, opts: EventListenerOptions, unregisterListenersCollection?: Function[]): Function {
     // use event listener options when supported
     // otherwise it's just a boolean for the "capture" arg
     const listenerOpts: any = this._uiEvtOpts ? {
-        'capture': !!opts.capture,
-        'passive': !!opts.passive,
-      } : !!opts.capture;
+      'capture': !!opts.capture,
+      'passive': !!opts.passive,
+    } : !!opts.capture;
 
     let unReg: Function;
     if (!opts.zone && ele['__zone_symbol__addEventListener']) {
@@ -703,7 +703,7 @@ export class Platform {
   /**
    * @hidden
    */
-  transitionEnd(el: HTMLElement, callback: {(ev?: TransitionEvent): void}, zone = true) {
+  transitionEnd(el: HTMLElement, callback: { (ev?: TransitionEvent): void }, zone = true) {
     const unRegs: Function[] = [];
 
     function unregister() {
@@ -822,7 +822,7 @@ export class Platform {
   /**
    * @hidden
    */
-  setPlatformConfigs(platformConfigs: {[key: string]: PlatformConfig}) {
+  setPlatformConfigs(platformConfigs: { [key: string]: PlatformConfig }) {
     this._registry = platformConfigs || {};
   }
 
@@ -1056,7 +1056,7 @@ class PlatformNode {
   isEngine: boolean;
   depth: number;
 
-  constructor(public registry: {[name: string]: PlatformConfig}, platformName: string) {
+  constructor(public registry: { [name: string]: PlatformConfig }, platformName: string) {
     this.c = registry[platformName];
     this.name = platformName;
     this.isEngine = this.c.isEngine;
@@ -1171,7 +1171,7 @@ export interface EventListenerOptions {
 /**
  * @hidden
  */
-export function setupPlatform(doc: HTMLDocument, platformConfigs: {[key: string]: PlatformConfig}, zone: NgZone): Platform {
+export function setupPlatform(doc: HTMLDocument, platformConfigs: { [key: string]: PlatformConfig }, zone: NgZone): Platform {
   const plt = new Platform();
   plt.setDefault('core');
   plt.setPlatformConfigs(platformConfigs);

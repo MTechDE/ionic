@@ -13,7 +13,7 @@ import { Platform } from '../platform/platform';
  * Currently, this uses the Taptic engine on iOS.
  *
  * @usage
- * ```ts
+ * ```typescript
  * export class MyClass{
  *  constructor(haptic: Haptic){
  *    haptic.selection();

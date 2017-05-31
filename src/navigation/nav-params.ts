@@ -6,7 +6,7 @@
  * option with a simple `get` method.
  *
  * @usage
- * ```ts
+ * ```typescript
  * export class MyClass{
  *  constructor(public navParams: NavParams){
  *    // userParams is an object we have in our nav-parameters
@@ -31,7 +31,7 @@ export class NavParams {
   /**
    * Get the value of a nav-parameter for the current view
    *
-   * ```ts
+   * ```typescript
    * export class MyClass{
    *  constructor(public navParams: NavParams){
    *    // userParams is an object we have in our nav-parameters

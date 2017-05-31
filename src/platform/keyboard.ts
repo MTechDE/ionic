@@ -14,7 +14,7 @@ import { Platform } from './platform';
  * by the Ionic keyboard plugin.
  *
  * @usage
- * ```ts
+ * ```typescript
  * export class MyClass {
  *   constructor(public keyboard: Keyboard) {
  *
@@ -52,7 +52,7 @@ export class Keyboard {
   /**
    * Check to see if the keyboard is open or not.
    *
-   * ```ts
+   * ```typescript
    * export class MyClass {
    *   constructor(public keyboard: Keyboard) {
    *
@@ -73,7 +73,7 @@ export class Keyboard {
   /**
    * When the keyboard is closed, call any methods you want.
    *
-   * ```ts
+   * ```typescript
    * export class MyClass {
    *   constructor(public keyboard: Keyboard) {
    *     this.keyboard.onClose(this.closeCallback);

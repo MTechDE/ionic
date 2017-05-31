@@ -62,7 +62,7 @@ import { ViewController } from './view-controller';
  * navigation controller for most situations (for more advanced situations, see
  * [Menu](../../menu/Menu/) and [Tab](../../tab/Tab/)).
  *
- * ```ts
+ * ```typescript
  *  import { NavController } from 'ionic-angular';
  *
  *  class MyComponent {
@@ -212,7 +212,7 @@ import { ViewController } from './view-controller';
  * To remove a view from the stack, use the `pop` method.
  * Popping a view will transition to the previous view.
  *
- * ```ts
+ * ```typescript
  * import { Component } from '@angular/core';
  * import { NavController } from 'ionic-angular';
  *
@@ -239,7 +239,7 @@ import { ViewController } from './view-controller';
  * Lifecycle events are fired during various stages of navigation.  They can be
  * defined in any component type which is pushed/popped from a `NavController`.
  *
- * ```ts
+ * ```typescript
  * import { Component } from '@angular/core';
  *
  * @Component({
@@ -272,7 +272,7 @@ import { ViewController } from './view-controller';
  * In some cases, a developer should be able to control views leaving and entering. To allow for this, NavController has the `ionViewCanEnter` and `ionViewCanLeave` methods.
  * Similar to Angular 2 route guards, but are more integrated with NavController. For example, if you wanted to prevent a user from leaving a view:
  *
- * ```ts
+ * ```typescript
  * export class MyClass{
  *  constructor(
  *    public navCtrl: NavController
@@ -297,7 +297,7 @@ import { ViewController } from './view-controller';
  * We need to make sure that our `navCtrl.push` has a catch in order to catch the and handle the error.
  * If you need to prevent a view from entering, you can do the same thing
  *
- * ```ts
+ * ```typescript
  * export class MyClass{
  *  constructor(
  *    public navCtrl: NavController

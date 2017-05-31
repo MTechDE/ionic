@@ -152,7 +152,7 @@ import { VirtualScroll } from './components/virtual-scroll/virtual-scroll';
  * valid property from the [Config](/docs/api/config/Config/).
  *
  * @usage
- * ```ts
+ * ```typescript
  * import { NgModule } from '@angular/core';
  *
  * import { IonicApp, IonicModule } from 'ionic-angular';
@@ -466,7 +466,7 @@ export class IonicModule {
  * bootstraps a child [IonicPage](../navigation/IonicPage/) in order to set up routing.
  *
  * @usage
- * ```ts
+ * ```typescript
  * import { NgModule } from '@angular/core';
  *
  * import { IonicPageModule } from 'ionic-angular';

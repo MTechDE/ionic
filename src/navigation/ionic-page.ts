@@ -34,7 +34,7 @@ export interface IonicPageMetadata {
  * a deep link in the `IonicPageModule.forChild` import of the page's module.
  * For our examples, this will be `MyPage`:
  *
- * ```ts
+ * ```typescript
  * @NgModule({
  *   declarations: [
  *     MyPage
@@ -52,7 +52,7 @@ export interface IonicPageMetadata {
  * Then, add the `@IonicPage` decorator to the component. The most simple usage is adding an
  * empty decorator:
  *
- * ```ts
+ * ```typescript
  * @IonicPage()
  * @Component({
  *   templateUrl: 'main.html'
@@ -63,7 +63,7 @@ export interface IonicPageMetadata {
  * This will automatically create a link to the `MyPage` component using the same name as the class,
  * `name`: `'MyPage'`. The page can now be navigated to by using this name. For example:
  *
- * ```ts
+ * ```typescript
  * @Component({
  *   templateUrl: 'another-page.html'
  * })
@@ -88,7 +88,7 @@ export interface IonicPageMetadata {
  * Changing the name of the link is extremely simple. To change the name used to link to the
  * component, simply pass it in the decorator like so:
  *
- * ```ts
+ * ```typescript
  * @IonicPage({
  *   name: 'my-page'
  * })
@@ -97,7 +97,7 @@ export interface IonicPageMetadata {
  * This will create a link to the `MyPage` component using the name `'my-page'`. Similar to the previous
  * example, the page can be navigated to by using the name:
  *
- * ```ts
+ * ```typescript
  * goToMyPage() {
  *   // go to the MyPage component
  *   this.navCtrl.push('my-page');
@@ -115,7 +115,7 @@ export interface IonicPageMetadata {
  * The `segment` can be changed to anything and doesn't have to match the `name`. For example, passing
  * a value for `name` and `segment`:
  *
- * ```ts
+ * ```typescript
  * @IonicPage({
  *   name: 'my-page',
  *   segment: 'some-path'
@@ -139,7 +139,7 @@ export interface IonicPageMetadata {
  * Since passing data around is common practice in an app, it can be reflected in the app's URL by
  * using the `:param` syntax. For example, set the `segment` in the `@IonicPage` decorator:
  *
- * ```ts
+ * ```typescript
  * @IonicPage({
  *   name: 'detail-page',
  *   segment: 'detail/:id'
@@ -155,7 +155,7 @@ export interface IonicPageMetadata {
  * For example, to push the `'detail-page'` in the `ListPage` component, the following code could
  * be used:
  *
- * ```ts
+ * ```typescript
  * @IonicPage({
  *   name: 'list'
  * })
@@ -201,7 +201,7 @@ export interface IonicPageMetadata {
  * The `defaultHistory` property takes an array of strings. For example, setting the history of the
  * detail page to the list page where the `name` is `list`:
  *
- * ```ts
+ * ```typescript
  * @IonicPage({
  *   name: 'detail-page',
  *   segment: 'detail/:id',
@@ -224,7 +224,7 @@ export interface IonicPageMetadata {
  * instead of on demand as needed. To enable preloading, set `preloadModules` in the main application module
  * config to `true`:
  *
- * ```ts
+ * ```typescript
  * @NgModule({
  *   declarations: [
  *     MyApp
@@ -252,7 +252,7 @@ export interface IonicPageMetadata {
  * the priority is set to `"off"` the link will not be preloaded. Setting the `priority` is as simple as
  * passing it to the `@IonicPage` decorator:
  *
- * ```ts
+ * ```typescript
  * @IonicPage({
  *   name: 'my-page',
  *   priority: 'high'

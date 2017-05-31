@@ -9,7 +9,7 @@ import { ScrollView } from './scroll-view';
  * events across your app.
  *
  * @usage
- * ```ts
+ * ```typescript
  * import { Events } from 'ionic-angular';
  *
  * // first page (publish an event when a user is created)
@@ -19,7 +19,7 @@ import { ScrollView } from './scroll-view';
  *   events.publish('user:created', user, Date.now());
  * }
  *
- *
+ *x
  * // second page (listen for the user created event after function is called)
  * constructor(public events: Events) {
  *   events.subscribe('user:created', (user, time) => {

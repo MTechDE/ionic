@@ -17,7 +17,7 @@ import { isObject, isDefined, isFunction, isArray } from '../util/util';
  * The Config lets you configure your entire app or specific platforms.
  * You can set the tab placement, icon mode, animations, and more here.
  *
- * ```ts
+ * ```typescript
  * import { IonicApp, IonicModule } from 'ionic-angular';
  *
  * @NgModule({
@@ -43,7 +43,7 @@ import { isObject, isDefined, isFunction, isArray } from '../util/util';
  * Config can be overwritten at multiple levels allowing for more granular configuration.
  * Below is an example where an app can override any setting we want based on a platform.
  *
- * ```ts
+ * ```typescript
  * import { IonicModule } from 'ionic-angular';
  *
  * @NgModule({
