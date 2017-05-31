@@ -30,7 +30,7 @@ import { assert } from '../../util/util';
  * </ion-content>
  * ```
  *
- * ```ts
+ * ```typescript
  * @Component({...})
  * export class NewsFeedPage {
  *   items = [];
@@ -76,7 +76,7 @@ import { assert } from '../../util/util';
  * </ion-content>
  * ```
  *
- * ```ts
+ * ```typescript
  * @Component({...})
  * export class NewsFeedPage {
  *   items = [];

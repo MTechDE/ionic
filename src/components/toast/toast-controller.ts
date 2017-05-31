@@ -36,7 +36,7 @@ import { ToastOptions } from './toast-options';
  * is dismissed.
  *
  * @usage
- * ```ts
+ * ```typescript
  * constructor(private toastCtrl: ToastController) {
  *
  * }

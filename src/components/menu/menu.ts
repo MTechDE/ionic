@@ -109,7 +109,7 @@ import { RootNode } from '../split-pane/split-pane';
  * It can also be set in the app's config. The below will set the menu type to
  * `push` for all modes, and then set the type to `overlay` for the `ios` mode.
  *
- * ```ts
+ * ```typescript
  * // in NgModules
  *
  * imports: [
@@ -156,7 +156,7 @@ import { RootNode } from '../split-pane/split-pane';
  * methods. In the below example, the `openMenu` method will open the menu
  * when it is called.
  *
- * ```ts
+ * ```typescript
  * import { Component } from '@angular/core';
  * import { MenuController } from 'ionic-angular';
  *

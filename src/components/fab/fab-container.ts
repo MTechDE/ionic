@@ -76,7 +76,7 @@ import { FabList } from './fab-list';
   * </ion-content>
   * ```
   *
-  * ```ts
+  * ```typescript
   * share(socialNet: string, fab: FabContainer) {
   *   fab.close();
   *   console.log("Sharing in", socialNet);

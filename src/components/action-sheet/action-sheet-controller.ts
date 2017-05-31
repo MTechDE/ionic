@@ -34,7 +34,7 @@ import { Config } from '../../config/config';
  * instance has methods to add options, like `setTitle()` or `addButton()`.
  *
  * @usage
- * ```ts
+ * ```typescript
  * import { ActionSheetController } from 'ionic-angular'
  *
  * export class MyClass{
@@ -114,7 +114,7 @@ import { Config } from '../../config/config';
  * out. In this case, it's best to ensure the action sheet has finished its transition
  * out first, *then* start the next transition.
  *
- * ```ts
+ * ```typescript
  * let actionSheet = this.actionSheetCtrl.create({
  *   title: 'Hello',
  *   buttons: [{

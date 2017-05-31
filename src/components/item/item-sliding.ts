@@ -141,7 +141,7 @@ export class ItemSliding {
    * @output {event} Emitted when the sliding position changes.
    * It reports the relative position.
    *
-   * ```ts
+   * ```typescript
    * ondrag(item) {
    *   let percent = item.getSlidingPercent();
    *   if (percent > 0) {
@@ -393,7 +393,7 @@ export class ItemSliding {
    * </ion-list>
    * ```
    *
-   * ```ts
+   * ```typescript
    * import { Component } from '@angular/core';
    * import { ItemSliding } from 'ionic-angular';
    *

@@ -42,7 +42,7 @@ import { ViewController } from '../../navigation/view-controller';
  *
  * Then, in your class you can set `chatRoot` to an imported class:
  *
- * ```ts
+ * ```typescript
  * import { ChatPage } from '../chat/chat';
  *
  * export class Tabs {
@@ -65,7 +65,7 @@ import { ViewController } from '../../navigation/view-controller';
  * </ion-tabs>
  * ```
  *
- * ```ts
+ * ```typescript
  * export class Tabs {
  *   chatRoot = ChatPage;
  *
@@ -83,7 +83,7 @@ import { ViewController } from '../../navigation/view-controller';
  *
  * And in `ChatPage` you can get the data from `NavParams`:
  *
- * ```ts
+ * ```typescript
  * export class ChatPage {
  *   constructor(navParams: NavParams) {
  *     console.log('Passed params', navParams.data);
@@ -102,7 +102,7 @@ import { ViewController } from '../../navigation/view-controller';
  * </ion-tabs>
  * ```
  *
- * ```ts
+ * ```typescript
  * export class Tabs {
  *   constructor(public modalCtrl: ModalController) {
  *

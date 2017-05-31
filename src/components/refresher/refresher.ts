@@ -35,7 +35,7 @@ import { UIEventManager } from '../../gestures/ui-event-manager';
  * </ion-content>
  * ```
  *
- * ```ts
+ * ```typescript
  * @Component({...})
  * export class NewsFeedPage {
  *

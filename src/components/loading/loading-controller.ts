@@ -46,7 +46,7 @@ import { LoadingOptions } from './loading-options';
  * a higher `z-index` than this element.
  *
  * @usage
- * ```ts
+ * ```typescript
  * constructor(public loadingCtrl: LoadingController) {
  *
  * }

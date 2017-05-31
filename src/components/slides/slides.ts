@@ -63,7 +63,7 @@ import { ViewController } from '../../navigation/view-controller';
  * a button click. Below we call the `goToSlide()` method and it
  * navigates to the 3rd slide:
  *
- * ```ts
+ * ```typescript
  * import { ViewChild } from '@angular/core';
  * import { Slides } from 'ionic-angular';
  *
@@ -86,7 +86,7 @@ import { ViewController } from '../../navigation/view-controller';
  * In our class, we add the `slideChanged()` method which gets the active
  * index and prints it:
  *
- * ```ts
+ * ```typescript
  * class MyPage {
  *   ...
  *
@@ -104,7 +104,7 @@ import { ViewController } from '../../navigation/view-controller';
  * In order to use an option that isn't exposed as an input the following code
  * should be used, where `freeMode` is the option to change:
  *
- * ```ts
+ * ```typescript
  * import { ViewChild } from '@angular/core';
  * import { Slides } from 'ionic-angular';
 

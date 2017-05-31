@@ -190,7 +190,7 @@ import { dateValueRange, renderDateTime, renderTextFormat, convertDataToISO, con
  *
  * ### App Config Level
  *
- * ```ts
+ * ```typescript
  * //app.module.ts
  * @NgModule({
  * ...,

@@ -115,7 +115,7 @@ import { SelectPopover, SelectPopoverOption } from './select-popover-component';
  * </ion-select>
  * ```
  *
- * ```ts
+ * ```typescript
  * this.selectOptions = {
  *   title: 'Pizza Toppings',
  *   subTitle: 'Select your toppings',

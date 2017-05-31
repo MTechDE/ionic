@@ -32,7 +32,7 @@ import { DeepLinker } from '../../navigation/deep-linker';
  * standard page.
  *
  * @usage
- * ```ts
+ * ```typescript
  * import { ModalController, NavParams } from 'ionic-angular';
  *
  * @Component(...)
@@ -72,7 +72,7 @@ import { DeepLinker } from '../../navigation/deep-linker';
  * the submit button could pass the updated profile data, then dismiss the
  * modal.
  *
- * ```ts
+ * ```typescript
  * import { Component } from '@angular/core';
  * import { ModalController, ViewController } from 'ionic-angular';
  *

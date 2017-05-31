@@ -33,7 +33,7 @@ import { removeArrayItem, assert } from '../../util/util';
  * into the page. Then, create some methods for opening, closing, and
  * toggling the menu.
  *
- * ```ts
+ * ```typescript
  * import { Component } from '@angular/core';
  * import { MenuController } from 'ionic-angular';
  *
@@ -75,7 +75,7 @@ import { removeArrayItem, assert } from '../../util/util';
  * <ion-nav #mycontent [root]="rootPage"></ion-nav>
  * ```
  *
- * ```ts
+ * ```typescript
  *  toggleLeftMenu() {
  *    this.menuCtrl.toggle();
  *  }
@@ -99,7 +99,7 @@ import { removeArrayItem, assert } from '../../util/util';
  * <ion-nav #mycontent [root]="rootPage"></ion-nav>
  * ```
  *
- * ```ts
+ * ```typescript
  *  enableAuthenticatedMenu() {
  *    this.menuCtrl.enable(true, 'authenticated');
  *    this.menuCtrl.enable(false, 'unauthenticated');
@@ -344,5 +344,3 @@ export class MenuController {
 }
 
 let menuTypes: { [name: string]: new(...args: any[]) => MenuType } = {};
-
-

@@ -26,7 +26,7 @@ import { Platform } from '../../platform/platform';
  *
  * Enable the sliding items.
  *
- * ```ts
+ * ```typescript
  * import { Component, ViewChild } from '@angular/core';
  * import { List } from 'ionic-angular';
  *

@@ -57,7 +57,7 @@ import { Item } from '../item/item';
  *  </ion-list>
  * ```
  *
- * ```ts
+ * ```typescript
  * @Component({
  *   templateUrl: 'main.html'
  * })

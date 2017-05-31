@@ -29,7 +29,7 @@ import { RootNode } from '../split-pane/split-pane';
  * You must set a root page to be loaded initially by any Nav you create, using
  * the 'root' property:
  *
- * ```ts
+ * ```typescript
  * import { Component } from '@angular/core';
  * import { GettingStartedPage } from './getting-started';
  *

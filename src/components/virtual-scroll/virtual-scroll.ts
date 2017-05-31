@@ -75,7 +75,7 @@ import { VirtualHeader } from './virtual-header';
  * be created and the template's data will come from the function's
  * returned data.
  *
- * ```ts
+ * ```typescript
  * myHeaderFn(record, recordIndex, records) {
  *   if (recordIndex % 20 === 0) {
  *     return 'Header ' + recordIndex;

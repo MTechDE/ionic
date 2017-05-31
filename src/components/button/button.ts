@@ -94,7 +94,7 @@ import { isTrueProperty } from '../../util/util';
   * </button>
   * ```
   *
-  * ```ts
+  * ```typescript
   * @Component({
   *   templateUrl: 'main.html'
   * })

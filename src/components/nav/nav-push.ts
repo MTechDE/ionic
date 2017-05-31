@@ -25,7 +25,7 @@ import { Page } from '../../navigation/nav-util';
  * and `pushPage` contains a reference to a
  * component you would like to push:
  *
- * ```ts
+ * ```typescript
  * import { LoginPage } from './login';
  *
  * @Component({

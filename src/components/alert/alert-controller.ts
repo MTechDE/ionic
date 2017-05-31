@@ -48,7 +48,7 @@ import { Config } from '../../config/config';
  *
  *
  * @usage
- * ```ts
+ * ```typescript
  * import { AlertController } from 'ionic-angular';
  *
  * constructor(private alertCtrl: AlertController) {
@@ -180,7 +180,7 @@ import { Config } from '../../config/config';
  * out. In this case, it's best to ensure the alert has finished its transition
  * out first, *then* start the next transition.
  *
- * ```ts
+ * ```typescript
  * let alert = this.alertCtrl.create({
  *   title: 'Hello',
  *   buttons: [{

@@ -54,7 +54,7 @@ import { DeepLinker } from '../../navigation/deep-linker';
  * </button>
  * ```
  *
- * ```ts
+ * ```typescript
  * import { PopoverController } from 'ionic-angular';
  *
  * @Component({})
@@ -74,7 +74,7 @@ import { DeepLinker } from '../../navigation/deep-linker';
  * can be anything. Below is an example of a page with items
  * that close the popover on click.
  *
- * ```ts
+ * ```typescript
  * @Component({
  *   template: `
  *     <ion-list>

@@ -83,7 +83,7 @@ export class ReorderIndexes {
  * </ion-list>
  * ```
  *
- * ```ts
+ * ```typescript
  * class MyComponent {
  *   items = [];
  *
@@ -104,7 +104,7 @@ export class ReorderIndexes {
  * Ionic also provides a helper function called `reorderArray` to
  * reorder the array of items. This can be used instead:
  *
- * ```ts
+ * ```typescript
  * import { reorderArray } from 'ionic-angular';
  *
  * class MyComponent {

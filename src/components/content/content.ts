@@ -47,7 +47,7 @@ export class EventEmitterProxy<T> extends EventEmitter<T> {
  * To get a reference to the content component from a Page's logic,
  * you can use Angular's `@ViewChild` annotation:
  *
- * ```ts
+ * ```typescript
  * import { Component, ViewChild } from '@angular/core';
  * import { Content } from 'ionic-angular';
  *
@@ -68,7 +68,7 @@ export class EventEmitterProxy<T> extends EventEmitter<T> {
  * layout of `Content`.
  *
  *
- * ```ts
+ * ```typescript
  * @Component({
  *   template: `
  *     <ion-header>
@@ -98,7 +98,7 @@ export class EventEmitterProxy<T> extends EventEmitter<T> {
  *
  * Scroll to a specific position
  *
- * ```ts
+ * ```typescript
  * import { Component, ViewChild } from '@angular/core';
  * import { Content } from 'ionic-angular';
  *

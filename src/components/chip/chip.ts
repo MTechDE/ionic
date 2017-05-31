@@ -77,7 +77,7 @@ import { Ion } from '../ion';
   * </ion-chip>
   * ```
   *
-  * ```ts
+  * ```typescript
   * @Component({
   *   templateUrl: 'main.html'
   * })
